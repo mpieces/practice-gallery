@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Sets the page to the width of the device and sets the zoom level -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marisa's Pieces</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link href="gallery.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="header">
+            <img class="img-responsive" src="assets/header.png">
+            <img class="img-responsive logo" src="assets/logo.png">
+
+            <nav class="navbar navbar-default navbar-inverse">
+              <div class="container-fluid">
+                <!-- COLLAPSING THE NAVBAR -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                      <!-- (LOGO LEFT ALIGNED )-->
+                <p class="navbar-text">Antique & Vintage Glass</p>
+                <div class="collapse navbar-collapse" id="myNavbar">
+        <!-- NAVBAR RIGHT ALIGNED: -->
+                 <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">About</a></li>
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href='#'>Glass by Maker  <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Fenton</a></li>
+                        <li><a href="#">Imperial</a></li>
+                      </ul>
+                    </li>
+                     <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href='#'>Glass by Type  <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Carnival</a></li>
+                        <li><a href="#">Depression</a></li>
+                      </ul>
+                    </li>
+                    <li><a href='#'>Contact Us</a></li>
+                  </ul>
+                  <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+
+      <h2 class="text-center"><span style="color:white">Carnival Glass</span></h2>
+
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="img-container">
+              <img class="glass" src="assets/cg_bowl_red.jpg">
+                <div class="middle">
+                  <div class="text" id="details">View Details</div>
+                </div>
+</div> <!-- CONTAINER -->
+
+            <div class="caption">
+              <p>Indiana Carnival Glass Rose Bowl<br> in Red</p>
+            </div>
+          </div>
+
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Indiana Carnival Glass</h4>
+        </div>
+        <div class="modal-body">
+          <p>Red Rose Bowl</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+          <div class="col-md-4">
+            <div class="img-container">
+            <img class="glass" src="assets/cg_bowl_teal.jpg">
+            <div class="middle">
+              <div class="text" id="details-1">View Details</div>
+            </div>
+          </div>
+            <div class="caption">
+              <p>Smith Carnival Glass Bowl in Teal</p>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+              <img class="img-responsive glass" src="assets/cg_bowl_pink.jpg">
+              <div class="caption">
+              <p>Smith Carnival Glass Bowl in Pink</p>
+              </div>
+           </div>
+
+        </div> <!-- end of row -->
+
+        <div class="row">
+          <div class="col-md-4">
+           <!-- <div class="thumbnail"> -->
+            <img class="img-responsive glass" src="assets/cg_teacups_orange.jpg">
+
+            <div class="caption">
+              <p>Jeannette Teacups & Saucers in Marigold</p>
+            </div>
+          <!-- </div> -->
+        </div>
+
+        <div class="col-md-4">
+           <!-- <div class="thumbnail"> -->
+            <img class="img-responsive glass" src="assets/cg_vase_pink.jpg">
+            <div class="caption">
+              <p>Imperial "Loganberry" Carnival Glass Vase in Pink</p>
+            </div>
+          <!-- </div> -->
+        </div>
+
+        <div class="col-md-4">
+           <!-- <div class="thumbnail"> -->
+              <img class="img-responsive glass" src="assets/red_bowl_tsp.png">
+              <div class="caption">
+              <p>caption text</p>
+              </div>
+           </div>
+          <!-- </div> -->
+        </div> <!-- end of row -->
+      </div>
+
+    </div>
+
+
+
+<!-- <div class="main">
+  <div class="main-gallery">
+
+
+    <div class="row">
+      <div class="col-md-4">
+       <div class="thumbnail">
+        <img src="assets/popcorn.jpg">
+
+        <div class="caption">
+          <p>caption text</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+       <div class="thumbnail">
+        <img src="assets/popcorn.jpg">
+
+        <div class="caption">
+          <p>caption text</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+       <div class="thumbnail">
+          <img src="assets/popcorn.jpg">
+
+          <div class="caption">
+          <p>caption text</p>
+          </div>
+       </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+ -->
+
+       <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+   <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+     <script src="js/bootstrap.min.js"></script>
+
+<!-- CUSTOM JS FILE -->
+    <script src="gallery.js"></script>
+  </body>
+</html>
+

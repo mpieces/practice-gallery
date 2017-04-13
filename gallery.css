@@ -1,0 +1,187 @@
+/*  SET ALL ELEMENTS TO BOX-SIZING : BORDER-BOX */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+/***********************************************************/
+/*(for sticky footer)*/
+/*html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;*/
+  /*overflow-x: hidden;*/
+/*}*/
+html, body {
+  margin:0;
+  padding:0;
+  width: 100%;
+  /*height:100%;*/
+  background-color: black;
+  background: url("http://i.imgur.com/BaKvHel.jpg") center top;  /*(no-repeat)*/
+}
+
+/*.header {
+  margin: 0 auto;
+}*/
+
+.header {
+  position: relative;
+}
+
+.logo {
+  z-index: 10;
+  position: absolute;
+  top: 60px;
+  left: 130px;
+}
+
+.navbar, .navbar-default, .navbar-inverse {
+  margin-top: -40px;
+  margin-bottom: 0px;
+  /*opacity: 0.5;*/
+}
+
+.navbar a {
+  padding: 10px;
+}
+
+.navbar li:hover {
+  background-color: #0A5D39;
+}
+
+ /*MAIN CONTAINER*/
+
+.main {
+  margin: 0 auto;
+  max-width: 940px;
+  background-color: black;
+  padding: 100px 30px 30px 30px;
+}
+
+/*.thumbnail {
+  margin: 20px;
+  background-color: black;
+}*/
+
+/*FOR HOVER BUTTON:*/
+.img-container {
+  position: relative;
+  width: 50%;
+}
+
+.img-container:hover .glass {
+  opacity: 0.3;
+}
+
+.img-container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #65bdaf;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  text-align: center;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.caption {
+  color: white;
+  text-align: center;
+}
+
+/*IMAGES*/
+.glass {
+  /*width: auto;*/
+  max-height: 300px;
+  width: 270px;
+  /*************************/
+  display: block;
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+
+}
+
+
+
+.hidden {
+  display: none;
+}
+
+/*.header, a {
+  text-align: center;
+  text-decoration: none;
+  float: center;
+  font-family: "Myriad Pro","Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+}
+
+a, a:visited, a:active {
+  text-decoration:none;
+  color: gray;
+ /* text-shadow:none;*/
+
+
+
+
+
+/*.nav {
+  border: 2px solid red;
+  z-index: 10;
+  position: absolute;
+
+  height: 50px;
+  margin-top: -10px;
+  text-align: center;
+}
+
+.nav a {
+  color:gray;
+  opacity:1;
+  padding:11px;
+  display:inline-block;
+  height:50px;
+  font-size:15px;
+  width:138px;
+  text-align:center;
+}
+
+.nav a:hover, .nav a.selected {
+  text-decoration:none;
+  background:#0A5D39;
+  color:white;
+}*/
+
+
+
+
+
+/*CATEGORY PAGE:*/
+
+/*.main-gallery {
+  height: auto;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: black;
+}*/
